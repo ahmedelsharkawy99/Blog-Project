@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Blog Project Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application built using ReactJS, Firebase, and Bootstrap that allows users to manage blog posts. Users can view, add, update, and delete blog posts after logging in with OAuth.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To run this project on your local machine, you will need to have Node.js and NPM installed. Once you have installed these, follow these steps:
 
-### `npm start`
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install the project's dependencies.
+4. Create a Firebase project and enable Authentication, Firestore, and Storage services.
+5. Create a `.env` file in the root directory of the project and add the following environment variables:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ````
+   REACT_APP_API_KEY =
+   REACT_APP_AUTH_DOMAIN =
+   REACT_APP_PROJECT_ID =
+   REACT_APP_STORAGE_BUCKET =
+   REACT_APP_MESSAGING_SENDER_ID =
+   REACT_APP_APP_ID =
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   You can find these values in your Firebase project settings.
 
-### `npm test`
+   ````
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. Run `npm start` to start the development server. This will open the application in your default browser.
 
-### `npm run build`
+Alternatively, you can view the live version of this application deployed on a hosting platform.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This application has the following features:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Authentication: users can create an account and log in to the application using OAuth.
+- View blog posts: users can view a list of blog posts available.
+- Add blog posts: users can create new blog posts by providing post details such as title, content, and image.
+- Update blog posts: users can edit an existing blog post and save the changes.
+- Delete blog posts: users can delete a blog post.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The following technologies were used to build this application:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ReactJS: A JavaScript library for building user interfaces.
+- ContextApi : React hook for managing the project state.
+- Firebase Authentication: A service that provides authentication and user management for web and mobile applications.
+- Firebase Firestore: A cloud-hosted NoSQL database that lets you store and sync data in real-time.
+- Firebase Storage: A cloud storage solution for storing user-generated content, such as images and videos.
+- Bootstrap: A popular CSS framework for building responsive and customizable user interfaces.
+- OAuth: An open-standard protocol for authorization that allows users to authenticate with third-party applications without sharing their credentials.
