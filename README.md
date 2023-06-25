@@ -2,6 +2,8 @@
 
 This project is a web application built using ReactJS, Firebase, and Bootstrap that allows users to manage blog posts. Users can view, add, update, and delete blog posts after logging in with OAuth.
 
+Live Demo: https://firestock.vercel.app/
+
 ## Getting Started
 
 To run this project on your local machine, you will need to have Node.js and NPM installed. Once you have installed these, follow these steps:
